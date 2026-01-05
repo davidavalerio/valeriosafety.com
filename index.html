@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valerio Safety | Oil & Gas Safety Consulting – Williston Basin</title>
+    <meta name="description" content="Safety consulting that focuses on eliminating hazards that actually kill people—not generating paperwork. Serving oil and gas operations in North Dakota, Montana, and the Williston Basin.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M2 4 L20 36 L38 4 L30 4 L20 24 L10 4 Z' fill='%232D5F4A'/></svg>">
+    <style>
+        :root {
+            --primary: #2D5F4A;
+            --secondary: #334155;
+            --accent: #B8860B;
+            --light-bg: #F8FAFC;
+            --dark: #0F172A;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: var(--white);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.05em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-cta {
+            background: var(--accent);
+            color: var(--dark) !important;
+            padding: 0.5rem 1.25rem;
+            border-radius: 4px;
+            font-weight: 600 !important;
+        }
+
+        .nav-cta:hover {
+            background: #9a7209;
+            color: var(--dark) !important;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu span {
+            width: 24px;
+            height: 2px;
+            background: var(--secondary);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            padding: 8rem 2rem 4rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--white);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            background: #9a7209;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+
+        .btn-outline:hover {
+            background: var(--accent);
+            color: var(--dark);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        @media (max-width: 1000px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* About Section */
+        .about {
+            padding: 6rem 2rem;
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-header {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .headshot {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .about-text h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            color: var(--primary);
+            margin-bottom: 0;
+        }
+
+        .about-text p {
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .credentials {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: 8px;
+        }
+
+        .credentials h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .credentials ul {
+            list-style: none;
+        }
+
+        .credentials li {
+            color: var(--secondary);
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .credentials li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 6rem 2rem;
+            background: var(--primary);
+        }
+
+        .contact .section-header h2 {
+            color: var(--white);
+        }
+
+        .contact .section-header p {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .contact-simple {
+            text-align: center;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .contact-details {
+            margin-top: 2rem;
+        }
+
+        .contact-details p {
+            color: rgba(255,255,255,0.8);
+            margin: 0.5rem 0;
+        }
+
+        .contact-details a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem 1.5rem;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem 1.5rem;
+                gap: 0;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 0.75rem 0;
+                border-bottom: 1px solid var(--light-bg);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+                padding-top: 1rem;
+            }
+
+            .nav-cta {
+                text-align: center;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero {
+                padding: 7rem 1.5rem 4rem;
+            }
+
+            .services,
+            .about,
+            .contact {
+                padding: 4rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 4 L20 36 L38 4 L30 4 L20 24 L10 4 Z" fill="#2D5F4A"/>
+            </svg>
+            <span class="logo-text">VALERIO SAFETY</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <div class="mobile-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Safety That Protects <span>People</span>, Not Paperwork</h1>
+            <p>Most safety programs exist to satisfy auditors. Ours focus on eliminating the hazards that actually kill people—then handle the compliance as efficiently as possible.</p>
+            <p style="margin-top: 2rem; font-size: 0.95rem; color: rgba(255,255,255,0.7);">David Valerio · Williston Basin HSE Consultant</p>
+            <a href="#contact" class="btn">Schedule a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>What We Do</h2>
+                <p>Focus on what actually causes serious injuries. Handle compliance with minimal overhead.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Hazard Elimination</h3>
+                    <p>We prioritize high-energy hazards—the ones that actually kill people. Struck-by, caught-between, falls, energy release. Not the low-risk items that generate paperwork but change nothing.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Safety Programs That Work</h3>
+                    <p>JSAs, hazard assessments, and emergency response plans designed for your operations—not copied from a template. Programs crews will actually use because they address real risks they recognize.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Training With Substance</h3>
+                    <p>Safety training that builds genuine competency, not just completion certificates. We focus on hazard recognition and decision-making, not checkbox compliance modules.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Incident Investigation</h3>
+                    <p>When something goes wrong, we find the systemic causes—not just the person to blame. Root cause analysis that actually prevents recurrence instead of generating corrective action theater.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 3rem; color: var(--secondary); font-size: 0.95rem;">
+                Need ISNetworld, Veriforce, or Avetta management? We partner with <a href="https://www.cookcompliance.co/" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 500;">Cook Compliance</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-header">
+                        <img src="David-Valerio-Professional-Headshot.jpg" alt="David Valerio" class="headshot">
+                        <h2>David Valerio</h2>
+                    </div>
+                    <p>I'm an HSE professional based in Williston, North Dakota, working across oil and gas operations in the Williston Basin. I started Valerio Safety because I got tired of watching safety programs that exist to satisfy auditors rather than protect workers.</p>
+                    <p>Too much of what passes for safety is theater. Regulations designed to protect regulators. Metrics that look rigorous but predict nothing. I take a different approach: focus resources on eliminating high-energy hazards—the things that actually cause fatalities and serious injuries. Meet compliance obligations efficiently, but don't confuse passing an audit with keeping people safe.</p>
+                    <p>This isn't anti-safety. It's anti-theater. The goal is fewer people hurt, not more paperwork generated.</p>
+                </div>
+                <div class="credentials">
+                    <h3>Background</h3>
+                    <ul>
+                        <li>HSE Specialist overseeing 17+ energy sector facilities across ND and MT</li>
+                        <li>Officer, Society of Petroleum Engineers – Williston Basin Section</li>
+                        <li>Rice University MS, Texas A&M BS – Earth Science</li>
+                        <li>ASP Candidate</li>
+                        <li>OSHA 511, OSHA 30-Hour General Industry</li>
+                        <li>HAZWOPER 40-Hour</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>If this approach makes sense for your operation, let's talk.</p>
+            </div>
+            <div class="contact-simple">
+                <a href="mailto:david@valeriosafety.com" class="btn" style="font-size: 1.1rem;">david@valeriosafety.com</a>
+                <div class="contact-details">
+                    <p><a href="tel:+17134789395">713-478-9395</a></p>
+                    <p>Williston, North Dakota</p>
+                    <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/in/davidavalerio/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Valerio Safety. All rights reserved.</p>
+    </footer>
+</body>
+</html>
