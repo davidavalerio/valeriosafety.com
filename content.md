@@ -8,7 +8,7 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 **Page Title:** Valerio Safety | Oil & Gas Safety Consulting – Williston Basin
 
-**Meta Description:** HSE consulting focused on eliminating hazards that cause fatalities and serious injuries, not generating paperwork. Upstream and midstream operations in the Williston Basin.
+**Meta Description:** HSE consulting focused on eliminating hazards that cause fatalities and serious injuries, not generating paperwork. Serving upstream and midstream operators and contractors in the Williston Basin.
 
 ---
 
@@ -66,9 +66,9 @@ For ISN, Veriforce, and Avetta platform management, I partner with Cook Complian
 
 ### Bio Paragraphs
 
-I'm a safety guy based in Williston, North Dakota. I work with operators and contractors in upstream and midstream across the Williston Basin. I started Valerio Safety because I got tired of watching safety programs designed to satisfy lawyers instead of protect workers.
+I'm a safety guy based in Williston, North Dakota. I work with upstream and midstream operators and contractors across the Williston Basin. I started Valerio Safety because I got tired of watching safety programs designed to satisfy lawyers instead of protect workers.
 
-Too much of what passes for safety work is fake. Rules designed to protect regulators. Metrics that look rigorous but predict nothing. I take a different approach by focusing on eliminating high-energy hazards, the things that actually cause fatalities and serious injuries. I strive to meet compliance obligations efficiently, but don't confuse passing an audit with keeping people safe.
+Too much of what passes for safety work is fake. Rules designed to protect regulators. Metrics that look rigorous but predict nothing. I take a different approach by focusing on eliminating high-energy hazards, the things that actually cause fatalities and serious injuries. I strive to meet compliance obligations efficiently, but don't confuse passing an inspection with keeping people safe.
 
 ### Background
 
