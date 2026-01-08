@@ -24,7 +24,7 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 **Headline:** Safety That Protects People, Not Paperwork
 
-**Subheadline:** Most safety programs exist to satisfy auditors. Mine exist to prevent fatalities and serious injuries. Compliance gets handled, but it's not the point.
+**Subheadline:** Most safety programs exist to satisfy auditors. Mine exist to prevent fatalities and serious injuries. Compliance gets handled, it's just not the point.
 
 **Byline:** David Valerio · Williston Basin HSE Consultant
 
@@ -36,23 +36,19 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 **Section Title:** What I Do
 
-**Section Subtitle:** Eliminate what causes serious harm. Handle compliance with minimal overhead.
+**Section Subtitle:** Eliminate hazards that cause serious harm and handle compliance with minimal overhead.
 
-### Hazard Elimination
+### Site Assessments
 
-High-energy hazards cause fatalities. Struck-by, caught-between, falls, vehicle accidents. I focus there. The low-risk items that populate safety binders don't get my attention, and they shouldn't get yours either.
+I identify high-energy hazards at your facilities—struck-by, caught-between, falls, vehicle accidents. The things that cause fatalities. You get specific recommendations for your operation, not a generic checklist that treats everything as equal risk.
 
-### Safety Programs
+### Training & Investigation
 
-Job safety analyses, hazard assessments, and emergency response plans developed for your operation, not copied from a template. A JSA that describes what your crew actually does is useful, one downloaded from the internet is not.
+I train people to recognize hazards and make decisions in the field, not just collect completion certificates. When something goes wrong, I find systemic causes—not just a person to blame—and recommend changes that prevent recurrence.
 
-### Training
+### Safety Documentation
 
-Most safety training exists to generate completion certificates. I train people to recognize hazards and make decisions in the field. The certificate is a side effect.
-
-### Incident Investigation
-
-When something goes wrong, I find systemic causes—not just the person to blame. Most incident investigations produce paperwork. Mine produce changes that prevent recurrence.
+Job safety analyses, hazard assessments, and emergency response plans developed for how your crew actually works. A JSA that reflects your operation is useful. One downloaded from the internet is not.
 
 ### Compliance Partnership Note
 
@@ -66,9 +62,9 @@ For ISN, Veriforce, and Avetta platform management, I partner with Cook Complian
 
 ### Bio Paragraphs
 
-I'm a safety guy based in Williston, North Dakota. I work with upstream and midstream operators and contractors across the Williston Basin. I started Valerio Safety because I got tired of watching safety programs designed to satisfy lawyers instead of protect workers.
+I'm a safety guy who works with operators and contractors across the Williston Basin. I started Valerio Safety because too much of what passes for safety work is theater—rules that protect companies from regulators, not workers from hazards.
 
-Too much of what passes for safety work is fake. Rules designed to protect regulators. Metrics that look rigorous but predict nothing. I take a different approach by focusing on eliminating high-energy hazards, the things that actually cause fatalities and serious injuries. I strive to meet compliance obligations efficiently, but don't confuse passing an inspection with keeping people safe.
+I take a different approach: focusing on high-energy hazards, the things that actually cause fatalities and serious injuries. I meet compliance obligations efficiently, but passing an inspection isn't the same as keeping people safe.
 
 ### Background
 
@@ -82,7 +78,7 @@ Too much of what passes for safety work is fake. Rules designed to protect regul
 
 **Section Title:** Get in Touch
 
-**Section Subtitle:** If my approach makes sense for your operation, let's talk.
+**Section Subtitle:** If this sounds like the approach you need, let's talk.
 
 ### Form Fields
 

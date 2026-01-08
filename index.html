@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valerio Safety | Oil & Gas Safety Consulting – Williston Basin</title>
     <meta name="description" content="HSE consulting focused on eliminating hazards that cause fatalities and serious injuries, not generating paperwork. Serving upstream and midstream operators and contractors in the Williston Basin.">
+    <link rel="canonical" href="https://valeriosafety.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Valerio Safety | Oil & Gas Safety Consulting – Williston Basin">
+    <meta property="og:description" content="HSE consulting focused on eliminating hazards that cause fatalities and serious injuries, not generating paperwork.">
+    <meta property="og:url" content="https://valeriosafety.com/">
+    <meta property="og:image" content="https://valeriosafety.com/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M2 4 L20 36 L38 4 L30 4 L20 24 L10 4 Z' fill='%232D5F4A'/></svg>">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Valerio Safety",
+        "description": "HSE consulting focused on eliminating hazards that cause fatalities and serious injuries. Serving operators and contractors in the Williston Basin.",
+        "url": "https://valeriosafety.com",
+        "telephone": "+1-713-478-9395",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Williston",
+            "addressRegion": "ND",
+            "addressCountry": "US"
+        },
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 48.1470,
+                "longitude": -103.6180
+            },
+            "geoRadius": "200 mi"
+        },
+        "priceRange": "$$",
+        "serviceType": ["HSE Consulting", "Safety Training", "Site Assessments", "Incident Investigation"]
+    }
+    </script>
     <style>
         :root {
             --primary: #2D5F4A;
@@ -104,12 +138,41 @@
             gap: 4px;
             cursor: pointer;
             padding: 0.5rem;
+            background: none;
+            border: none;
         }
 
         .mobile-menu span {
             width: 24px;
             height: 2px;
             background: var(--secondary);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            z-index: 1001;
+            text-decoration: none;
+        }
+
+        .skip-link:focus {
+            top: 0;
         }
 
         /* Hero Section */
@@ -133,10 +196,6 @@
             font-weight: 700;
             line-height: 1.2;
             margin-bottom: 1.5rem;
-        }
-
-        .hero h1 span {
-            color: var(--white);
         }
 
         .hero p {
@@ -163,17 +222,6 @@
         .btn:hover {
             background: #A66347;
             transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--accent);
-            color: var(--accent);
-        }
-
-        .btn-outline:hover {
-            background: var(--accent);
-            color: var(--white);
         }
 
         /* Services Section */
@@ -207,17 +255,11 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        @media (max-width: 1000px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
             .services-grid {
                 grid-template-columns: 1fr;
             }
@@ -334,30 +376,6 @@
             color: rgba(255,255,255,0.8);
         }
 
-        .contact-simple {
-            text-align: center;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
-        .contact-details {
-            margin-top: 2rem;
-        }
-
-        .contact-details p {
-            color: rgba(255,255,255,0.8);
-            margin: 0.5rem 0;
-        }
-
-        .contact-details a {
-            color: rgba(255,255,255,0.9);
-            text-decoration: none;
-        }
-
-        .contact-details a:hover {
-            color: var(--accent);
-        }
-
         .contact-form {
             max-width: 500px;
             margin: 0 auto;
@@ -406,6 +424,36 @@
         footer p {
             color: rgba(255,255,255,0.6);
             font-size: 0.9rem;
+        }
+
+        .hero-byline {
+            margin-top: 2rem;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .compliance-note {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--secondary);
+            font-size: 0.95rem;
+        }
+
+        .compliance-note a {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .contact-phone {
+            text-align: center;
+            margin-top: 2rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .contact-phone a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
         }
 
         /* Responsive */
@@ -470,63 +518,63 @@
     </style>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <!-- Navigation -->
     <nav>
-        <a href="#" class="logo">
-            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <a href="#" class="logo" aria-label="Valerio Safety home">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M2 4 L20 36 L38 4 L30 4 L20 24 L10 4 Z" fill="#2D5F4A"/>
             </svg>
             <span class="logo-text">VALERIO SAFETY</span>
         </a>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#services" onclick="document.getElementById('nav-links').classList.remove('active')">Services</a></li>
+            <li><a href="#about" onclick="document.getElementById('nav-links').classList.remove('active')">About</a></li>
+            <li><a href="#contact" class="nav-cta" onclick="document.getElementById('nav-links').classList.remove('active')">Contact</a></li>
         </ul>
-        <div class="mobile-menu" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        <button class="mobile-menu" aria-label="Toggle navigation menu" onclick="document.getElementById('nav-links').classList.toggle('active')">
             <span></span>
             <span></span>
             <span></span>
-        </div>
+        </button>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Safety That Protects <span>People</span>, Not Paperwork</h1>
-            <p>Most safety programs exist to satisfy auditors. Mine exist to prevent fatalities and serious injuries. Compliance gets handled, but it's not the point.</p>
-            <p style="margin-top: 2rem; font-size: 0.95rem; color: rgba(255,255,255,0.7);">David Valerio · Williston Basin HSE Consultant</p>
+            <h1>Safety That Protects People, Not Paperwork</h1>
+            <p>Most safety programs exist to satisfy auditors. Mine exist to prevent fatalities and serious injuries. Compliance gets handled, it's just not the point.</p>
+            <p class="hero-byline">David Valerio · Williston Basin HSE Consultant</p>
             <a href="#contact" class="btn">Schedule a Consultation</a>
         </div>
     </section>
+
+    <main id="main">
 
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
                 <h2>What I Do</h2>
-                <p>Eliminate what causes serious harm. Handle compliance with minimal overhead.</p>
+                <p>Eliminate hazards that cause serious harm and handle compliance with minimal overhead.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Hazard Elimination</h3>
-                    <p>High-energy hazards cause fatalities. Struck-by, caught-between, falls, vehicle accidents. I focus there. The low-risk items that populate safety binders don't get my attention, and they shouldn't get yours either.</p>
+                    <h3>Site Assessments</h3>
+                    <p>I identify high-energy hazards at your facilities—struck-by, caught-between, falls, vehicle accidents. The things that cause fatalities. You get specific recommendations for your operation, not a generic checklist that treats everything as equal risk.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Safety Programs</h3>
-                    <p>Job safety analyses, hazard assessments, and emergency response plans developed for your operation, not copied from a template. A JSA that describes what your crew actually does is useful, one downloaded from the internet is not.</p>
+                    <h3>Training & Investigation</h3>
+                    <p>I train people to recognize hazards and make decisions in the field, not just collect completion certificates. When something goes wrong, I find systemic causes—not just a person to blame—and recommend changes that prevent recurrence.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Training</h3>
-                    <p>Most safety training exists to generate completion certificates. I train people to recognize hazards and make decisions in the field. The certificate is a side effect.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Incident Investigation</h3>
-                    <p>When something goes wrong, I find systemic causes—not just the person to blame. Most incident investigations produce paperwork. Mine produce changes that prevent recurrence.</p>
+                    <h3>Safety Documentation</h3>
+                    <p>Job safety analyses, hazard assessments, and emergency response plans developed for how your crew actually works. A JSA that reflects your operation is useful. One downloaded from the internet is not.</p>
                 </div>
             </div>
-            <p style="text-align: center; margin-top: 3rem; color: var(--secondary); font-size: 0.95rem;">
-                For ISN, Veriforce, and Avetta platform management, I partner with <a href="https://www.cookcompliance.co/" target="_blank" rel="noopener" style="color: var(--primary); font-weight: 500;">Cook Compliance</a>. I handle the safety work, they handle the compliance paperwork.
+            <p class="compliance-note">
+                For ISN, Veriforce, and Avetta platform management, I partner with <a href="https://www.cookcompliance.co/" target="_blank" rel="noopener">Cook Compliance</a>. I handle the safety work, they handle the compliance paperwork.
             </p>
         </div>
     </section>
@@ -540,8 +588,8 @@
                         <img src="David-Valerio-Professional-Headshot.jpg" alt="David Valerio" class="headshot">
                         <h2>David Valerio</h2>
                     </div>
-                    <p>I'm a safety guy based in Williston, North Dakota. I work with upstream and midstream operators and contractors across the Williston Basin. I started Valerio Safety because I got tired of watching safety programs designed to satisfy lawyers instead of protect workers.</p>
-                    <p>Too much of what passes for safety work is fake. Rules designed to protect regulators. Metrics that look rigorous but predict nothing. I take a different approach by focusing on eliminating high-energy hazards, the things that actually cause fatalities and serious injuries. I strive to meet compliance obligations efficiently, but don't confuse passing an inspection with keeping people safe.</p>
+                    <p>I'm a safety guy who works with operators and contractors across the Williston Basin. I started Valerio Safety because too much of what passes for safety work is theater—rules that protect companies from regulators, not workers from hazards.</p>
+                    <p>I take a different approach: focusing on high-energy hazards, the things that actually cause fatalities and serious injuries. I meet compliance obligations efficiently, but passing an inspection isn't the same as keeping people safe.</p>
                 </div>
                 <div class="credentials">
                     <h3>Background</h3>
@@ -560,23 +608,27 @@
         <div class="container">
             <div class="section-header">
                 <h2>Get in Touch</h2>
-                <p>If my approach makes sense for your operation, let's talk.</p>
+                <p>If this sounds like the approach you need, let's talk.</p>
             </div>
             <form class="contact-form" action="https://formspree.io/f/xnjnkknw" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="How can I help?" required></textarea>
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="message" class="sr-only">How can I help?</label>
+                <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
-            <p style="text-align: center; margin-top: 2rem; color: rgba(255,255,255,0.8);">
-                Or call: <a href="tel:713-478-9395" style="color: var(--white); text-decoration: none; font-weight: 500;">713-478-9395</a>
+            <p class="contact-phone">
+                Or call: <a href="tel:713-478-9395">713-478-9395</a>
             </p>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Valerio Safety. All rights reserved.</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Valerio Safety. All rights reserved.</p>
     </footer>
 </body>
 </html>
