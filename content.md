@@ -8,7 +8,7 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 **Page Title:** Valerio Safety | Oil & Gas Safety Consulting – Williston Basin
 
-**Meta Description:** HSE consulting focused on eliminating hazards that cause fatalities and serious injuries, not generating paperwork. Serving upstream and midstream operators and contractors in the Williston Basin.
+**Meta Description:** Safety consulting focused on eliminating hazards that cause fatalities and serious injuries, not generating paperwork. Serving upstream and midstream operators and contractors in the Williston Basin.
 
 ---
 
@@ -26,7 +26,7 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 **Subheadline:** Most safety programs exist to satisfy auditors. Mine exist to prevent fatalities and serious injuries. Compliance gets handled, it's just not the point.
 
-**Byline:** David Valerio · Williston Basin HSE Consultant
+**Byline:** David Valerio · Williston Basin Safety Consultant
 
 **Button:** Schedule a Consultation
 
@@ -68,7 +68,7 @@ I take a different approach: focusing on high-energy hazards, the things that ac
 
 ### Background
 
-- HSE Specialist overseeing 15+ energy sector facilities across ND and MT
+- Safety specialist overseeing 15+ energy sector facilities across ND and MT
 - Rice University MS, Texas A&M BS – Earth Science
 - OSHA 511, OSHA 30-Hour General Industry, HAZWOPER 40-Hour
 
@@ -93,4 +93,4 @@ I take a different approach: focusing on high-energy hazards, the things that ac
 
 ## Footer
 
-© 2025 Valerio Safety. All rights reserved.
+© 2026 Valerio Safety. All rights reserved.
