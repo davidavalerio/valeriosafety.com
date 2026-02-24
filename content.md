@@ -38,21 +38,21 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 **Section Subtitle:** Eliminate hazards that cause serious harm and handle compliance with minimal overhead.
 
-### Site Assessments
+### Hazard Assessment
 
-I identify high-energy hazards at your facilities—struck-by, caught-between, falls, vehicle accidents. The things that cause fatalities. You get specific recommendations for your operation, not a generic checklist that treats everything as equal risk.
+I walk your facilities looking for the things that kill people—struck-by, caught-between, falls, vehicle incidents. You get a prioritized list of what to fix first based on actual risk, not a generic checklist that treats a missing label the same as an unguarded pinch point.
 
-### Safety Training
+### Incident Analysis
 
-I train people to recognize hazards and make decisions in the field, not just collect completion certificates.
+When something goes wrong, I trace it back to systemic causes—not just the person holding the wrench. You get an honest account of what failed and specific changes that prevent it from happening again.
 
-### Incident Investigation
+### Field Training
 
-When something goes wrong, I find systemic causes—not just a person to blame—and recommend changes that prevent recurrence.
+I teach your crew to see hazards and make good decisions before something goes wrong. No death-by-PowerPoint, no checkbox completion certificates—practical skills they'll actually use on location.
 
-### Safety Documentation
+### Safety Programs
 
-Job safety analyses, hazard assessments, and emergency response plans developed for how your crew actually works. A JSA that reflects your operation is useful. One downloaded from the internet is not.
+JSAs, hazard assessments, emergency action plans—written for how your crew actually works. A safety program built around your operation is useful. One downloaded from the internet is not.
 
 ### Compliance Partnership Note
 
