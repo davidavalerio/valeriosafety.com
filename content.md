@@ -42,9 +42,13 @@ This file contains all the copy for valeriosafety.com. Edit the text here, then 
 
 I identify high-energy hazards at your facilities—struck-by, caught-between, falls, vehicle accidents. The things that cause fatalities. You get specific recommendations for your operation, not a generic checklist that treats everything as equal risk.
 
-### Training & Investigation
+### Safety Training
 
-I train people to recognize hazards and make decisions in the field, not just collect completion certificates. When something goes wrong, I find systemic causes—not just a person to blame—and recommend changes that prevent recurrence.
+I train people to recognize hazards and make decisions in the field, not just collect completion certificates.
+
+### Incident Investigation
+
+When something goes wrong, I find systemic causes—not just a person to blame—and recommend changes that prevent recurrence.
 
 ### Safety Documentation
 

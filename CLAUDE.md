@@ -31,7 +31,7 @@ Sections in DOM order, with their anchor IDs:
 1. **Nav** — Sticky top bar with logo, links to `#services`, `#about`, `#contact`
 2. **Hero** (no ID) — Flat deep purple, headline, byline, CTA button
 3. `<main id="main">` — Wraps all content sections below
-4. **Services** (`#services`) — Three cards: Site Assessments, Training & Investigation, Safety Documentation. Followed by Cook Compliance partnership note linking to `cookcompliance.co`.
+4. **Services** (`#services`) — Four cards in 2×2 grid: Site Assessments, Safety Training, Incident Investigation, Safety Documentation. Followed by Cook Compliance partnership note linking to `cookcompliance.co`.
 5. **About** (`#about`) — Headshot, bio, credentials panel
 6. **Contact** (`#contact`) — Form (Formspree), phone number: `713-478-9395`
 7. **Footer** — Copyright with dynamic year
